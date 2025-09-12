@@ -21,3 +21,17 @@ O que ele NÃO faz? Ele não contém lógica de negócio complexa (isso é traba
 
 # o que é getter and setter?
 é um encapsulamento que server de segurança para a classe.
+
+# DAO
+Data Access Object
+Interface para utilização da model aos metodos de CRUD
+
+# table usuario
+create table usuario(
+    id integer primary key auto_increment,
+    nome varchar(20) not null,
+    sobrenome varchar(20) not null,
+    idade integer not null,
+    sexo char(1) not null
+    
+);
