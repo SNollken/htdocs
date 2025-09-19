@@ -18,7 +18,7 @@ private PDO $pdo;
     public static function createUsuario(Usuario $usuario)  {
 
         try{
-            $sql = "INSERT INTO usuario(id,nome,sobrenome,idade,sexo)
+            $sql = "INSERT INTO usuario(nome,sobrenome,idade,sexo)
                     VALUES(:nome,:sobrenome,:idade,:sexo)";
             $p_sql = Conexao::getConexao()->prepare($sql);
             $p_sql->bindValue(":nome", $usuario->getNome());
@@ -71,6 +71,7 @@ private PDO $pdo;
                 where id = :id";
 
             $p_sql = Conexao::getConexao()->prepare($sql);
+            $p_sql->bindValue(":id", $usuario->getId());
             $p_sql->bindValue(":nome", $usuario->getNome());
             $p_sql->bindValue(":nome", $usuario->getNome());
             $p_sql->bindValue(":sobrenome", $usuario->getSobrenome());
