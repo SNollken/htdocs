@@ -1,51 +1,111 @@
 <?php
 
-class Usuario{ 
+class Usuario{
     private $id;
     private $nome;
     private $sobrenome;
     private $idade;
     private $sexo;
+
     
-    public function getId() {
+
+    /**
+     * Get the value of id
+     */ 
+    public function getId()
+    {
         return $this->id;
     }
 
-    public function setId($id) {
+    /**
+     * Set the value of id
+     *
+     * @return  self
+     */ 
+    public function setId($id)
+    {
         $this->id = $id;
+
+        return $this;
     }
 
-    public function getNome() {
+    /**
+     * Get the value of nome
+     */ 
+    public function getNome()
+    {
         return $this->nome;
     }
 
-    public function setNome($nome) {
+    /**
+     * Set the value of nome
+     *
+     * @return  self
+     */ 
+    public function setNome($nome)
+    {
         $this->nome = $nome;
+
+        return $this;
     }
 
-    public function getSobrenome() {
+    /**
+     * Get the value of sobrenome
+     */ 
+    public function getSobrenome()
+    {
         return $this->sobrenome;
     }
 
-    public function setSobrenome($sobrenome) {
+    /**
+     * Set the value of sobrenome
+     *
+     * @return  self
+     */ 
+    public function setSobrenome($sobrenome)
+    {
         $this->sobrenome = $sobrenome;
+
+        return $this;
     }
 
-    public function getIdade() {
+    /**
+     * Get the value of idade
+     */ 
+    public function getIdade()
+    {
         return $this->idade;
     }
 
-    public function setIdade($idade) {
+    /**
+     * Set the value of idade
+     *
+     * @return  self
+     */ 
+    public function setIdade($idade)
+    {
         $this->idade = $idade;
+
+        return $this;
     }
 
-    public function getSexo() {
+    /**
+     * Get the value of sexo
+     */ 
+    public function getSexo()
+    {
         return $this->sexo;
     }
 
-    public function setSexo($sexo) {
+    /**
+     * Set the value of sexo
+     *
+     * @return  self
+     */ 
+    public function setSexo($sexo)
+    {
         $this->sexo = $sexo;
+
+        return $this;
     }
-
 }
-
